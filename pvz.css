@@ -1,0 +1,128 @@
+:root{
+    --kolor:rgb(40,40,40);
+}
+
+
+section{
+    padding:30px
+}
+
+#main-sekcja1{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    
+}
+
+#sekcja1 p{
+    width:700px;
+    float:right;
+    
+}
+
+#sekcja2 > p{
+    width:85%;
+    float:none;
+}
+
+
+nav{
+    width:200px;
+    margin-top:20px;
+    float:left;
+}
+nav h4{
+    font-size:1.2rem;
+    margin:0;
+    padding:10px;
+    background-color:rgb(191, 238, 238);
+    border: 2px solid rgb(11, 109, 11);
+}
+
+nav  ol{
+    margin:0;
+    padding:0;
+    line-height:180%;
+    list-style:none;
+    font-size:1.1rem;
+}
+
+nav ol li{
+    background-color:grey;
+    background-color: blanchedalmond;
+    border:2px solid rgb(11, 109, 11);
+}
+
+nav ol li a{
+    color:rgb(31, 31, 31);
+    padding:5px;
+    width:100%;
+    display:inline-block;
+    box-sizing:border-box;
+}
+
+nav ol  li a:hover{
+    background-color:rgb(228, 208, 178);
+    color:var(--kolor);
+}
+
+#sekcja1 img{
+    width:200px;
+    padding:10px;
+    float:right
+}
+
+table{
+    width:100%;
+    
+}
+
+td, th{
+    padding:10px;
+    background-color: antiquewhite;
+    color:#242424;
+    text-align:center;
+    font-size:1.1rem;
+    border-radius:5px;
+    color:var(--kolor)
+}
+
+tr:first-child > th{
+    background-color:rgb(214, 194, 169);
+}
+
+tr:hover >td {
+    background-color:rgb(232, 212, 185);
+}
+
+
+.lista-trybow, .lista-puzzle, .lista-ciekawostki{
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight:500;
+    font-size:1.25rem;
+    line-height:120%;
+    color: rgb(21, 21, 21);
+}
+
+.lista-trybow > li, .lista-puzzle >li, .lista-ciekawostki >li{
+    margin:20px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+.lista-trybow >li i:nth-child(1), .lista-ciekawostki >li i:nth-child(1){
+    color:rgb(30, 144, 57);
+}
+
+.lista-trybow > li i:nth-child(2){
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    color:rgb(90, 90, 90)
+}
+
+
+@media screen and (max-width:500px){
+
+    tr >td:nth-child(2){
+        display:none
+    }
+}
+
